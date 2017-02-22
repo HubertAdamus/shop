@@ -1,0 +1,15 @@
+{% extends 'admin/user/formLayout.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Edit user</h1>
+                <span class="help-block">Password in edit is not necessary</span>
+                {{ include('admin/user/_form.html.twig') }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+

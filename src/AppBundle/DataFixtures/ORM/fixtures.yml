@@ -1,0 +1,55 @@
+AppBundle\Entity\User:
+    user1:
+        email: 'admin@admin.com'
+        plainPassword: '123456'
+        roles: ['ROLE_ADMIN']
+
+AppBundle\Entity\Product:
+    product1:
+        name: 'Sugar'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product2:
+        name: 'Water'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product3:
+        name: 'Coffee'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product4:
+        name: 'Cake'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product5:
+        name: 'Tea'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product6:
+        name: 'Pizza'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product7:
+        name: 'Cheese'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product8:
+        name: 'Butter'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product9:
+        name: 'Beer'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product10:
+        name: 'Doughnut'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product11:
+        name: 'Orange'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'
+    product12:
+        name: 'Potato'
+        description: '<text($minNbChars = 300)>'
+        price: '<numberBetween(1, 10)>'

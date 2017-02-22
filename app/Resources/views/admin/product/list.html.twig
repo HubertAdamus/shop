@@ -1,0 +1,38 @@
+{% extends 'admin/base_server.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="pull-right" style="margin-bottom: 10px; margin-top: 20px;">
+                    <a href="{{ path('admin_product_new') }}" class="btn btn-primary pull-right">Add <span class="fa fa-plus-circle"></span></a>
+                </div>
+
+                <h1>Products</h1>
+
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>{{ knp_pagination_sortable(pagination, 'Name', 'p.name') }}</th>
+                        <th width=10%>{{ knp_pagination_sortable(pagination, 'Price', 'p.price') }}</th>
+                    </tr>
+                    </thead>
+                    <tbody id="sort">
+                    {% for product in pagination %}
+                        <tr>
+                            <td>{{ product.name }}</td>
+                            <td>{{ product.price }} $</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+                <div class="navigation text-center">
+                    {{ knp_pagination_render(pagination) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
